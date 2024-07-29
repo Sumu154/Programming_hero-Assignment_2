@@ -70,12 +70,14 @@ html{
 
 
 
-nav, .banner{
+nav, .banner, .section-one, .section-two, .section-three
+.section-five{
     width: 80%;
     margin: 0 auto;
 }
 
-nav, .banner, .section-one{
+nav, .banner, .section-one, .section-two, .section-three, 
+.section-four, .section-five{
     padding: 15px 0;
 }
 
@@ -170,14 +172,32 @@ nav > ul > li > a{
 }
 
 /* section one - change your habit */
-.section-one{
-    background-color: red;
-}
 .section-one>p{
-    max-width: 70%;
+    max-width: 60%;
     text-align: center;
+    margin: 10px auto;
+}
+.section-one>div{
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 8%;
 }
 
+.habit>img{
+    width: 100%;
+    border-radius: 50%;
+}
+.habit>p{
+    text-align: center;
+}
+.habit-title{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.habit>img, .habit>p{
+    margin-bottom: 5px;
+}
 
 
 
