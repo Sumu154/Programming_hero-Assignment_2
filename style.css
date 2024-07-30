@@ -5,6 +5,7 @@
 :root{
     --white: #FFFFFF;
     --dark: #000000;
+    --gray: #222;
     --tomato: #E6533C;  
 }
 html{
@@ -45,7 +46,7 @@ html{
 .description-two{
     font-size: .88rem;
 }
-.header-title, .section-title, .subsection-title{
+.header-title, .section-title, .section-subtitle{
     color: var(--white);
     font-weight: 900;
     line-height: 120%;
@@ -57,7 +58,7 @@ html{
     font-size: 3rem;
     text-align: center;
 }
-.subsection-title{
+.section-subtitle{
     font-size: 1.75rem;
 }
    /* others */
@@ -70,16 +71,21 @@ html{
 
 
 
-nav, .banner, .section-one, .section-two, .section-three
-.section-five{
-    width: 80%;
-    margin: 0 auto;
+nav, .banner, #section-one, #section-two, #section-three,
+#section-four>div, #section-five{
+    max-width: 80%;
 }
 
-nav, .banner, .section-one, .section-two, .section-three, 
-.section-four, .section-five{
-    padding: 15px 0;
+nav, .banner, #section-four>div{
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
+#section-one, #section-two, #section-three, #section-four
+#section-five{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
 
 
 /* header styles */
@@ -88,6 +94,7 @@ header{
 }
              /* nav styles */
 nav{
+    padding-top: 25px;
     justify-content: space-between;
     align-items: center;
 }
@@ -172,12 +179,13 @@ nav > ul > li > a{
 }
 
 /* section one - change your habit */
-.section-one>p{
+
+#section-one>p{
     max-width: 60%;
     text-align: center;
     margin: 10px auto;
 }
-.section-one>div{
+#section-one>div{
     margin-top: 50px;
     justify-content: space-between;
     gap: 8%;
@@ -198,6 +206,88 @@ nav > ul > li > a{
 .habit>img, .habit>p{
     margin-bottom: 5px;
 }
+
+/* section two - run extra */
+#section-two{
+    background-color: var(--gray);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+  
+}
+#section-two>div, #section-two>img{
+    margin: 20px 20px 20px 40px;
+    max-width: 40%;
+}
+#section-two>img{
+    border-radius: 8px;
+}
+#section-two>div>h4, #section-two>div>p{
+    text-align: left;
+    margin-bottom: 5px;
+}
+#section-two button{
+    padding: 15px 50px;
+}
+
+/* section three */
+#section-three>h4, #section-three>p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+#section-three>div{
+    margin: 40px 0;
+    width: 100%;
+    aspect-ratio: 1 / .4;
+}
+
+#row-1 p, #row-2 p{
+    margin: 40px;
+    text-align: right;
+    opacity: 1;
+}
+#row-1{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+#row-2{
+    grid-template-columns: 1.7fr 1fr 1.3fr;
+}
+#item-1{
+    background: linear-gradient(0deg, rgba(6,255,210,.5) 0%, rgba(6,255,210,.5) 100%),
+                url("assets/images/exercise1.jpg");
+}
+#item-2{
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.30) 0%, rgba(255, 0, 0, 0.30) 100%),
+                url("assets/images/exercise2.png");
+}
+#item-3{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+                url("assets/images/exercise3.png");
+}
+#item-4{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+                url("assets/images/exercise4.png");
+}
+#item-5{
+    background: linear-gradient(0deg, rgba(66, 255, 0, 0.30) 0%, rgba(66, 255, 0, 0.30) 100%),
+                url("assets/images/exercise5.jpg");
+}
+#item-6{
+    background: linear-gradient(0deg, rgba(0, 71, 255, 0.30) 0%, rgba(0, 71, 255, 0.30) 100%),
+                url("assets/images/exercise6.jpg");
+}
+#item-1, #item-2, #item-3, #item-4, #item-5, #item-6{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+/* section four */
+#section-four{
+    background-color: red;
+}
+
 
 
 
