@@ -6,7 +6,8 @@
     --white: #FFFFFF;
     --dark: #000000;
     --gray: #222;
-    --tomato: #E6533C;  
+    --tomato: #E6533C; 
+    --lightgray: rgba(255, 255, 255, .1);
 }
 html{
     font-size: 16px;
@@ -21,7 +22,7 @@ html{
 
     font-size: 1.1rem;
     font-weight: 600;
-    padding: 15px 35px;
+    padding: 12px 35px;
     margin: 7px;
 
     border-radius: 42px;
@@ -72,15 +73,15 @@ html{
 
 
 nav, .banner, #section-one, #section-two, #section-three,
-#section-four>div, #section-five{
+#chart-table/* #section-four>div>div */, #section-five{
     max-width: 80%;
 }
 
-nav, .banner, #section-four>div{
+nav, .banner{
     margin: 0 auto;
     margin-bottom: 50px;
 }
-#section-one, #section-two, #section-three, #section-four
+#section-one, #section-two, #section-three, #section-four,
 #section-five{
     margin: 0 auto;
     margin-bottom: 100px;
@@ -108,7 +109,7 @@ nav > h4{
 nav > ul{
     padding: 12px 4px;
     border-radius: 45px;
-    border: 2px solid rgba(255, 255, 255, .1);
+    border: 2px solid var(--lightgray);
 }
 nav > ul > li{
     list-style: none;
@@ -141,7 +142,7 @@ nav > ul > li > a{
 
 .videos{
     background-color: rgba(48, 48, 48, 0.54);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid var(--lightgray);
     border-radius: 8px;
     padding: 15px;
     max-width: 160px;
@@ -227,7 +228,7 @@ nav > ul > li > a{
     margin-bottom: 5px;
 }
 #section-two button{
-    padding: 15px 50px;
+    padding: 12px 50px;
 }
 
 /* section three */
@@ -284,11 +285,130 @@ nav > ul > li > a{
 }
 
 /* section four */
-#section-four{
-    background-color: red;
+#section-four>h4, #section-four>p{
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 5px;
+}
+#section-four>div{
+    background-color: var(--gray);
+    margin-top: 50px;
+    padding: 50px 0;
+}
+#chart-table{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+#left, #right{
+    width: 50%;
+}
+    /* table - left part */
+#left>h4{
+    margin-bottom: 40px;
+}
+#left>table{
+    border-collapse: collapse;
+}
+#left td, #left th{
+    border: 1px solid var(--lightgray);
+    padding: 8px 25px;
+}
+#thead{
+    text-align: left;
+    opacity: 1;
 }
 
+    /* input form */
+#right>h4, #right>p{
+    margin-bottom: 10px;
+}
+#right>div{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    margin-bottom: 10px;
+}
+.input-box input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: var(--lightgray);
+    border: none;
+}
+.input-box:nth-child(5){
+    width: 100%;
+}
 
+#right button{
+    margin-top: 20px;
+    padding: 12px 50px;
+}
 
+/* section five */
+#section-five>h4, #section-five>p{
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#section-five>div{
+    background-color: var(--lightgray);
+    margin-top: 50px;
+    border-radius: 18px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    gap: 20px;
+}
 
+#trainer>div{
+    aspect-ratio: 1 / .8;
+    border-radius: 18px;
+}
+.trainer-des{
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 900;
 
+    padding: 0 20px;
+    margin-top: 60%;
+}
+#trainer p{
+    padding: 0 20px;
+}
+
+#trainer-one{
+    background-image: url('assets/images/trainer1.png');
+}
+#trainer-two{
+    background-image: url('assets/images/trainer2.png');
+}
+#trainer-three{
+    background-image: url('assets/images/trainer3.png');
+}
+#trainer-four{
+    background-image: url('assets/images/trainer4.png');
+}
+#trainer-five{
+    background-image: url('assets/images/trainer5.png');
+}
+#trainer-six{
+    background-image: url('assets/images/trainer6.png');
+}
+#trainer-one, #trainer-two, #trainer-three, #trainer-four,
+#trainer-five, #trainer-six{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* footer section */
