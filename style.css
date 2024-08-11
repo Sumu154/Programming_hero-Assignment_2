@@ -23,7 +23,7 @@ html{
     font-size: 1.1rem;
     font-weight: 600;
     padding: 12px 35px;
-    margin: 7px;
+    margin-top: 15px;
 
     border-radius: 42px;
 }
@@ -34,6 +34,7 @@ html{
 .btn-second{
     background-color: var(--dark);
     border: 1px solid var(--white);
+    margin-left: 10px;
 }
 
       /* description and titles */
@@ -138,7 +139,9 @@ nav > ul > li > a{
     align-items: center;
     gap: 15%;
 }
-
+#banner-text{
+    max-width: 800px;
+}
 
 .videos{
     background-color: rgba(48, 48, 48, 0.54);
@@ -188,9 +191,10 @@ nav > ul > li > a{
 }
 #section-one>div{
     margin-top: 50px;
-    justify-content: space-between;
-    gap: 8%;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8%;
 }
+
 
 .habit>img{
     width: 100%;
