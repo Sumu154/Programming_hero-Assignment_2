@@ -57,6 +57,14 @@
         width: 100%;
     }
 
+    /* section six -> challange part */
+    #section-six>div{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        margin-top: 30px;
+    }
+
+
     /* footer */
     footer>div{
         flex-direction: column;
@@ -187,7 +195,15 @@
         margin-top: 250px;
     }
 
+    /* section six - challange part */
+    #section-six>div{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
     /* footer */
+   
     footer>div{
         flex-direction: column;
         gap: 50px;

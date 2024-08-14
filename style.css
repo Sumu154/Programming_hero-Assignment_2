@@ -74,7 +74,7 @@ html{
 
 
 
-nav, .banner, #section-one, #section-two, #section-three,
+nav, .banner, #section-one, #section-two, #section-three, #section-six,
 #chart-table/* #section-four>div>div */, #section-five, footer>div{
     max-width: 80%;
 }
@@ -84,11 +84,10 @@ nav, .banner{
     margin-bottom: 50px;
 }
 #section-one, #section-two, #section-three, #section-four,
-#section-five{
+#section-five, #section-six{
     margin: 0 auto;
     margin-bottom: 100px;
 }
-
 
 
 /* header styles */
@@ -422,6 +421,32 @@ nav > ul > li > a{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* section six */
+#section-six>div{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5%;
+    margin-top: 30px;
+}
+.training-type{
+    background-color: var(--lightgray);
+}
+.training-type>img{
+    max-width: 30%; 
+    aspect-ratio: 1 / 1; 
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.training-type>p{
+    margin: 10px 0;
+    padding: 0 15px;
+}
+.join{
+    color: var(--white);
+    display: inline-block;
+    margin: 30px 10px;
+}
+
 
 
 /* footer section */
