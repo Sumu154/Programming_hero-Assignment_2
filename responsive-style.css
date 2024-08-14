@@ -136,6 +136,12 @@
         top: -300px;
         right: -150px;
     }
+    #tuto-number{
+        font-size: 1.25rem;
+    }
+    #free-number{
+        font-size: 2rem;
+    }
 
 
     /* section one */

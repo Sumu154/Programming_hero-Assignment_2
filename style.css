@@ -168,7 +168,12 @@ nav > ul > li > a{
     font-size: 2.5rem;
 }
 
-#tutorial {
+.description{
+    color: var(--white);
+    opacity: .65;
+}
+
+#tutorial{
     gap: 15px;
     position: relative; 
     margin-top: -150px;
