@@ -37,5 +37,173 @@
         row-gap: 20px;
         column-gap: 20%;
     }
-        
+
+    /* section two */
+    #section-two>div>h4{
+        font-size: 2.25rem;
+    }
+
+    /* section four */
+    #chart-table{
+        max-width: 92%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #section-four>h4, #section-four>p{
+        max-width: 85%;
+        margin: 2.5%;
+    }
+    #right{
+        width: 100%;
+    }
+
+    /* footer */
+    footer>div{
+        flex-direction: column;
+        gap: 50px;
+    }
+    #footer-left, #footer-right{
+        width: 100%;
+    }
+      
 }
+
+
+@media screen and (max-width: 576px) {
+    nav{
+        max-width: 96%;
+    } 
+    .banner, #section-one, #section-two, #section-three,
+    #chart-table/* #section-four>div>div */, #section-five, footer>div{
+        max-width: 92%;
+    }
+
+    nav, .banner{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #section-one, #section-two, #section-three, #section-four,
+    #section-five{
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .btn-first, .btn-second{
+        padding: 12px 20px;
+    }
+
+
+    /* header */
+    nav ul li{
+        display: none;
+    }
+    nav ul{
+        border: none;
+    }
+    #menu{
+        display: contents;
+
+    }
+
+    .header-title{
+        font-size: 2.5rem;  
+    }
+    #banner-text h3, #banner-text p{
+        max-width: 360px;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+    
+    #banner-image{
+        margin: 0 auto;
+    }
+
+    #tutorial {
+        margin-top: -180px;
+        margin-left: -10px;
+    }
+    #free{
+        top: -300px;
+        right: -150px;
+    }
+
+
+    /* section one */
+    .section-title{
+        font-size: 2rem;
+    }
+    .section-subtitle{
+        font-size: 1.25rem;
+    }
+
+    #section-one>div{
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 80px;
+        row-gap: 20px;
+    }
+
+    /* section two */
+    #section-two{
+        flex-direction: column;
+    }
+    #section-two>div, #section-two>img{
+        margin: 20px;
+        max-width: 90%;
+    }
+    #section-two button{
+        display: inline-block;
+    }
+
+    /*section four */
+    #chart-table{
+        max-width: 92%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #section-four>h4, #section-four>p{
+        max-width: 85%;
+        margin: 2.5%;
+    }
+    #left, #right{
+        width: 100%;
+    }
+    #left>h4{
+        margin-bottom: 20px;
+    }
+
+    /* section five */
+    #section-five>div{
+        grid-template-columns: repeat(1,1fr); 
+    }
+    #trainer>div{
+        height: 320px;
+        border-radius: 18px;
+    }
+    .trainer-des{
+        margin-top: 250px;
+    }
+
+    /* footer */
+    footer>div{
+        flex-direction: column;
+        gap: 50px;
+    }
+    #footer-left, #footer-right{
+        width: 100%;
+    }
+
+    #footer-left>h4{
+       font-size: 3rem; 
+    }
+    #footer-right{
+        flex-direction: column;
+    }
+    #footer-right h4{
+        font-size: 2rem;
+    }
+}
+

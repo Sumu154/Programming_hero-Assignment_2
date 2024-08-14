@@ -61,6 +61,7 @@ html{
     text-align: center;
 }
 .section-subtitle{
+    font-weight: 700;
     font-size: 1.75rem;
 }
    /* others */
@@ -95,6 +96,9 @@ header{
     background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%);
 }
              /* nav styles */
+nav>a{
+    display: none;
+}
 nav{
     padding-top: 25px;
     justify-content: space-between;
@@ -218,13 +222,16 @@ nav > ul > li > a{
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-  
 }
 #section-two>div, #section-two>img{
     margin: 20px 20px 20px 40px;
-    max-width: 40%;
+}
+#section-two>div{
+    max-width: 50%;
 }
 #section-two>img{
+    max-width: 40%;
+    height: 250px;
     border-radius: 8px;
 }
 #section-two>div>h4, #section-two>div>p{
@@ -290,7 +297,7 @@ nav > ul > li > a{
 
 /* section four */
 #section-four>h4, #section-four>p{
-    width: 55%;
+    max-width: 55%;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 5px;
@@ -301,7 +308,7 @@ nav > ul > li > a{
     padding: 50px 0;
 }
 #chart-table{
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     /* background-color: red; */
 }
@@ -336,10 +343,11 @@ nav > ul > li > a{
 .input-box:nth-child(2n){
     justify-content: end;
 }
+
 .input-box{
     display: flex;
     flex-wrap: wrap;
-    width: 48%;
+    width: calc(50% - 5px);
     margin-bottom: 10px;
 }
 .input-box input{
@@ -413,7 +421,6 @@ nav > ul > li > a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: red;
 }
 
 
