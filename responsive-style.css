@@ -53,7 +53,7 @@
         max-width: 85%;
         margin: 2.5%;
     }
-    #right{
+    #left, #right{
         width: 100%;
     }
 
